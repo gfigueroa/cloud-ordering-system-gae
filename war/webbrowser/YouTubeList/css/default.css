@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#F3F2F0;
+	font-family:"微軟正黑體", Tahoma;
+	font-weight:bold;
+}
+
+h7{
+	color:#000;
+	font-size:14px;
+	padding-right:40px;
+	margin:0px;
+	text-align:right;
+}
+
+ul.menubar{
+	float:left; 
+	width:840px; 
+	list-style:none; 
+	margin:0px 0px 0px 10px;
+}
+
+ul.menubar li{
+	float:left; 
+	width:140px;
+}
+
+ul.menubar li a{
+	color:white;
+	line-height:38px;
+	font-weight:bold;
+	font-size:18px; 
+	text-decoration:none;
+}
+
+div.menubar{
+	background-image:url(../img/type_bar.png); 
+	height:38px; 
+	width:856px; 
+	margin:0px auto 0px auto; 
+	line-height:38px;
+	background-repeat:no-repeat;
+}
+
+.logo_left{
+	float:left;
+	width:428px;
+	height:67px;
+	margin-left:42px;
+}
+.logo_right{
+	float:left;
+	width:428px;;
+	height:67px;
+	text-align:right;
+	margin-right:42px;
+	line-height:67px;
+	
+}
+.logo_right img{
+	vertical-align:middle;
+	line-height:67px;
+}
+.search_button{
+	background-color:#D23D14; 
+	color:#FFF; 
+	font-weight:bold;
+}
+
+.footer a {
+	color:black;
+	text-decoration:none;
+	font-size:14px;
+	text-align:center;
+}
+.footer {
+	color:black;
+	font-size:14px;
+	text-align:center;
+}

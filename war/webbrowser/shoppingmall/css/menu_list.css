@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu_title{
+	background-image:url(../restaurant/img/menu_title.gif); 
+	width:740px; 
+	height:50px; 
+	background-repeat:no-repeat; 
+	background-position:42px; 
+	padding-left:42px; 
+	line-height:45px;
+
+}
+.menu_tyle_title{
+	float:left; 
+	height:30px; 	 
+	font-weight:bold;
+}
+hr.menu_tyle{
+	color:#000; 
+	border:0; 
+	width:635px; 
+	height:3px; 
+	background-color:#000; 
+	padding-top:0px;
+}
+.type_list{
+	background-image:url(../restaurant/img/menu_type_backbround.gif); 
+	float:left; 
+	width:194px; 
+	height:471px; 
+	background-repeat:no-repeat; 
+	background-position:42px; 
+	padding:0px 14px 0 42px;
+}
+
+.menutypelist {
+	padding-left:20px; 
+	background-image:url(../restaurant/img/type.gif); 
+	background-repeat:no-repeat; 
+	padding-left:45px; 
+	height:30px; 
+	background-position:20px; 
+	line-height:23px; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:14px;
+}
+.menutypelist a{
+
+	line-height:23px; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+td.menu_list{
+	width:162px;
+	height:260px;
+	text-align:center;
+	background-color:#FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #ABA7A4;
+	border-right-color: #ABA7A4;
+}
+
+UL{
+	margin:5px 0px 0px 0px;
+	color:#7E7E7E; 
+	font-size:14px; 
+	font-weight:bold;
+	display:none;
+}
+
+LI{
+	margin-bottom:5px;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul.playlist {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	float:right;
+	height:100px;
+	width:auto;
+	white-space:nowrap;
+	display:inline;
+	
+}
+ul.playlist li {
+	margin: 0px 3px;
+	float: left;
+	width:130px;
+	display: inline;
+}
+ul.playlist li a img {
+	border: 0px;
+	display:inline;
+	vertical-align: middle;
+	
+	
+}
+ 
+div.playlist_form{
+	width:1040px; 
+	margin-left:40px; 
+	height:100px; 
+	overflow:visible;
+}
+ 
+.tv {
+	background: #666;
+	padding: 10px;
+	width: 740px;
+	height: 500px;
+}
+.video {
+	float:left;
+	width: 640px;
+	height: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+}

@@ -1,0 +1,5 @@
+"Food and Drink","Fast foods","Hamburgers store","Delicious","hamb@burger.com","burger","burger","burger.com","/burger.jpg","08","00","15","00","-"
+"Food and Drink","Fast foods","Friest Store","Very Delicious","fries@burger.com","fries","fries","fries.com","/fries.jpg","08","00","15","00","-"
+"Food and Drink","Fast foods","Drink store","So Delicious","drink@burger.com","drink","drink","drink.com","/drink.jpg","08","00","15","00","-"
+"Food and Drink","Fast foods","Water store","Wow Delicious","water@burger.com","water","water","water.com","/water.jpg","08","00","15","00","-"
+"Food and Drink","Fast foods","Ice store","How Delicious","ice@burger.com","ice","ice","ice.com","/ice.jpg","08","00","15","00","-"

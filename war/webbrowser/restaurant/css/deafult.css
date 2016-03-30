@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+.body_contant{
+	width:960px; 
+	height:auto; 
+	padding:0px 10px 0px 10px; 
+	margin-left:auto; 
+	margin-right:auto;
+	overflow:visible;
+	font-family:"微軟正黑體", Tahoma;
+}
+.body{
+	background-color:#F3F2F0;
+	font-family:"微軟正黑體", Tahoma;
+	font-weight:bold;
+}
+h2{
+	margin:0px;
+	padding:0px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+h1{
+	color:#6E5843;
+	font-weight:bold;
+	font-size:18px;
+	padding:0px;
+	margin:0px;
+}
+
+h3{
+	color:#878787;
+	font-weight:bold;
+	font-size:16px;
+	padding:0px;
+	margin:0px;
+}
+
+h4{
+	margin:0px;
+	padding:0px;
+	font-weight:bold;
+	font-size:16px;
+}
+h4 a{
+	margin:0px;
+	padding:0px;
+	font-weight:bold;
+	font-size:16px;
+	color:#000;
+	text-decoration:none;
+}
+
+h5{
+	color:#878787;
+	font-size:14px;
+	font-weight:normal;
+	padding:0px;
+	margin:0px;
+}
+
+h6{	
+	color:#DE3C15;
+	font-weight:bold;
+	font-size:16px;
+	padding:0px;
+	margin:0px;
+
+}
+h7{
+	color:#000;
+	font-size:14px;
+	padding-right:40px;
+	margin:0px;
+	text-align:right;
+}
+
+h8{
+	color:#868686;
+	font-size:36px;
+	margin:0px 30px 0px 10px;
+}
+
+.menu_list_table{
+	border: 1px solid #ABA7A4;
+	
+}
+.resaturantTypeBar{
+	float:left; 
+	margin-left:42px; 
+	height:38px; 
+	overflow:hidden; 
+	background-repeat:no-repeat; 
+	width:856px; 
+	background-image:url(../img/restaurant_type_bar.png);
+	font-size:18px; 
+	color:#FFF; 
+	line-height:38px; 
+	width:856px; 
+	text-align:center;
+}
+.restaurant_select{
+	width:78px; height:38px; float:left;
+	
+}
+.restaurant_select a{
+	font-size:18px; 
+	color:#FFF;
+	text-decoration:none;
+}
+.restaurant_type_bar{
+	width:140px; 
+	height:38px; 
+	float:left;
+}
+.restaurant_type_bar a{
+	font-size:18px; 
+	color:#FFF;
+	text-decoration:none;
+}
+

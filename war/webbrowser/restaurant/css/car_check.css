@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.car_title{
+	background-image:url(../restaurant/img/car_title.gif); 
+	background-repeat:no-repeat; 
+	padding-left:200px; 
+	background-position:42px; 
+	height:50px; 
+	width:910px; 
+	line-height:55px;
+}
+
+.car_list{
+	border-top-style:solid; 
+	border-top-width:1px; 
+	border-top-color:#ABA7A4;
+}

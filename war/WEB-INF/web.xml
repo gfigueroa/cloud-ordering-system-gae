@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+version="2.5">
+    
+    <!-- Session management servlets -->
+	<servlet>
+	    <servlet-name>SessionCreator</servlet-name>
+	    <servlet-class>
+	    	servlets.CreateSessionServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>SessionCreator</servlet-name>
+	    <url-pattern>/attemptlogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionCreator</servlet-name>
+	    	<url-pattern>/handleSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>SessionVariables</servlet-name>
+    	<servlet-class>
+     		servlets.SessionVariablesServlet
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>SessionVariables</servlet-name>
+    	<url-pattern>/addToCart</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>SessionVariables</servlet-name>
+    	<url-pattern>/viewCart</url-pattern>
+  	</servlet-mapping>
+	<!-- End of Session management   -->
+    
+    <!-- Managing Users servlet -->
+  	<servlet>
+	    <servlet-name>ManageUser</servlet-name>
+	    <servlet-class>
+	      servlets.ManageUserServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageUser</servlet-name>
+	    <url-pattern>/manageUser</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Users  -->
+    
+    <!-- Managing Stores servlet -->
+  	<servlet>
+    	<servlet-name>ManageRestaurant</servlet-name>
+    	<servlet-class>
+      		servlets.ManageRestaurantServlet
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>ManageRestaurant</servlet-name>
+    	<url-pattern>/manageRestaurant</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Stores  -->
+	
+	<!-- Managing Global Objects servlet -->
+  	<servlet>
+	    <servlet-name>ManageObject</servlet-name>
+	    <servlet-class>
+	      servlets.ManageGlobalObjectsServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageObject</servlet-name>
+	    <url-pattern>/manageObject</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Global Objects  -->
+  	
+  	<!-- Manage System servlet -->
+  	<servlet>
+	    <servlet-name>ManageSystem</servlet-name>
+	    <servlet-class>
+	      servlets.ManageSystemServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageSystem</servlet-name>
+	    <url-pattern>/manageSystem</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Manage System  -->
+	
+	<!-- Serve Files and Images servlets -->
+  	<servlet>
+    	<servlet-name>FileDownload</servlet-name>
+    	<servlet-class>servlets.FileDownloadServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>FileDownload</servlet-name>
+    	<url-pattern>/fileDownload</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>img</servlet-name>
+    	<servlet-class>servlets.ImageServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>img</servlet-name>
+    	<url-pattern>/img</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Serve Images -->
+  	
+  	  <!-- Servlet and mapping for REST services -->
+  	<servlet>
+    	<servlet-name>RestletServlet</servlet-name>
+    	<servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+    	<init-param>
+      		<param-name>org.restlet.application</param-name>
+      		<param-value>webservices.ExternalApplication</param-value>
+    	</init-param>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>RestletServlet</servlet-name>
+    	<url-pattern>/rest/*</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of REST declarations -->
+  	
+  	<!-- Mobile App Servlets -->
+  	<servlet>
+	    <servlet-name>MobileApp</servlet-name>
+	    <servlet-class>
+	      servlets.MobileAppServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>MobileApp</servlet-name>
+	    <url-pattern>/mobile</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+	    <servlet-name>CloudSync</servlet-name>
+	    <servlet-class>
+	      servlets.CloudSyncServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>CloudSync</servlet-name>
+	    <url-pattern>/cloudSync</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Mobile App Servlets  -->
+	
+	<!-- Upload File Servlet -->
+	 <servlet>
+	    <servlet-name>FileUpload</servlet-name>
+	    <servlet-class>
+	      servlets.FileUploadServlet
+	    </servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/uploadfile</url-pattern>
+	</servlet-mapping>
+	<!-- End Upload File Servlet -->
+	
+	<!-- Email Notification Servlet -->
+	<servlet>
+	    <servlet-name>EmailNotification</servlet-name>
+	    <servlet-class>
+	      servlets.EmailNotificationServlet
+	    </servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmailNotification</servlet-name>
+		<url-pattern>/emailNotification</url-pattern>
+	</servlet-mapping>
+	<!-- End Email Notification Servlet -->
+	
+	<!-- Testing Servlet -->
+	 <servlet>
+	    <servlet-name>Testing</servlet-name>
+	    <servlet-class>
+	      servlets.TestingServlet
+	    </servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>Testing</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<!-- End of Testing Servlet -->
+	
+	<!-- Webbrowser -->
+  	<servlet>
+    	<servlet-name>OrderItemList</servlet-name>
+    	<servlet-class>
+      		webbrowser.OrderItemList
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>OrderItemList</servlet-name>
+    	<url-pattern>/OrderItemList</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  	   	<servlet-name>addToCar</servlet-name>
+    	<servlet-class>
+      		webbrowser.addToCar
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>addToCar</servlet-name>
+    	<url-pattern>/addToCar_test</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  	    <servlet-name>CreateSessionServlet</servlet-name>
+    	<servlet-class>
+      		webbrowser.CreateSessionServlet
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>CreateSessionServlet</servlet-name>
+    	<url-pattern>/attemptlogin_test</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+		<servlet-name>CreateSessionServlet</servlet-name>
+	    <url-pattern>/handleSession_test</url-pattern>
+	</servlet-mapping>
+	<!-- Webbrowser End -->
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<error-page>
+        <error-code>500</error-code>
+        <location>/errors/servererror.jsp</location>
+    </error-page>
+	
+</web-app>

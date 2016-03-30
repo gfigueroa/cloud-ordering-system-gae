@@ -1,0 +1,12 @@
+@font-face{
+font-family: 'myFont';
+src: url('MSJH.eot?#iefix') format('embedded-opentype'),
+	 url('MSJH.ttf') format('truetype');
+	
+}
+@font-face{
+font-family: 'myFont';
+src: url('MSJH.eot?#iefix') format('embedded-opentype'),
+	 url('MSJH.ttf') format('truetype');
+font-weight:bold;
+}

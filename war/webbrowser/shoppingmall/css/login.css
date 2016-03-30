@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.login_title{
+	background-image:url(../member/img/login_title.gif); 
+	background-repeat:no-repeat; 
+	padding-left:200px; 
+	background-position:42px; 
+	height:50px; 
+	width:940px; 
+	line-height:55px;
+
+}
+
+.login_format{
+	background-color:#FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #ABA7A4;
+	border-right-color: #ABA7A4;
+}
+
+.login_format a{
+	color:#DE3C15;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:16px;
+	padding:0px;
+	margin:0px;
+}
+
+.login_submit{
+	background-image:url(../member/img/ok.jpg);
+	background-repeat:no-repeat; 
+	background-position:center; 
+	height:32px; 
+	width:49px; 
+	border:0px;
+}
+
